@@ -11,6 +11,8 @@ public class Main {
         System.out.printf("t3=%s, %d%n", t3.name(), t3.ordinal());
         System.out.printf("t4=%s, %d%n", t4.name(), t4.ordinal());
         System.out.printf("t5=%s, %d%n", t5.name(), t5.ordinal());
+        // enum .equals로 동일함을 비교하지 않아도 된다.
+        // static class로 만들어지기 때문에 같은 상수는 항상 주소값이 같기 때문이다.
         System.out.println("t1==t2 ? " + (t1==t2));
         System.out.println("t1.compareTo(t3)=" + t1.compareTo(t3));
     }
